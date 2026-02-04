@@ -32,7 +32,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            display-name = "buchstaben";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -42,18 +42,18 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4            &kp N5                              &kp N6                &kp N7     &kp N8        &kp N9      &kp NUMBER_0  &kp BACKSPACE
-&kp ESC    &kp DE_X   &kp DE_V     &kp DE_L     &kp DE_C             &kp DE_W                &kp Y                 &kp U      &kp I         &kp O       &kp P         &kp LEFT_BRACKET
-&kp TAB    &kp A   &kp S     &kp D     &kp F             &kp G                               &kp H                 &kp J      &kp K         &kp L       &kp SEMI      &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V             &kp B      &kp C_MUTE    &none      &kp N                 &kp M      &kp COMMA     &kp PERIOD  &kp SLASH     &kp LEFT_SHIFT
-                   &kp LGUI  &kp LALT  &kp LEFT_CONTROL  &lt 1 RET  &kp RET       &kp SPACE  &mt LEFT_SHIFT SPACE  &kp RCTRL  &kp LEFT_ALT  &kp RGUI
+&kp GRAVE  &kp DE_N1            &kp DE_N2           &kp DE_N3           &kp DE_N4            &kp DE_N5                              &kp DE_N6                &kp DE_N7     &kp DE_N8        &kp DE_N9      &kp DE_N0  &kp BACKSPACE
+&kp ESC    &kp DE_X             &kp DE_V            &kp DE_L            &kp DE_C             &kp DE_W                               &kp DE_K                 &kp DE_H      &kp DE_G         &kp DE_F       &kp DE_Q   &kp DE_CAPITAL_SZ
+&kp TAB    &kp DE_U             &kp DE_I            &kp DE_A            &kp DE_E             &kp DE_O                               &kp DE_S                 &kp DE_N      &kp DE_R         &kp DE_T       &kp DE_D   &kp DE_Y
+&kp LSHFT  &kp DE_U_UMLAUT      &kp DE_O_UMLAUT     &kp DE_A_UMLAUT     &kp DE_P             &kp DE_Z   &kp C_MUTE    &none         &kp DE_B                 &kp DE_M      &kp DE_COMMA     &kp DE_PERIOD  &kp DE_J   &none
+                                &kp LGUI            &kp LALT            &kp LEFT_CONTROL     &lt 1 RET  &kp RET       &kp SPACE     &mt LEFT_SHIFT RET  &kp RCTRL  &kp LEFT_ALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "sonderzeichen";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -64,11 +64,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1                &kp F2             &kp F3            &kp F4             &kp F5                          &kp F6           &kp F7                &kp F8                 &kp F9     &kp F10        &kp F11
-&kp GRAVE  &none                 &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_CARET                       &kp DE_EXCLAMATION  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_EQUAL  &kp DE_AMPERSAND  &kp F12
-&trans     &kp DE_BACKSLASH  	 &kp DE_SLASH       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE    &kp DE_ASTERISK                    &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_MINUS  &kp DE_COLON      &kp DE_AT_SIGN
-&trans     &kp DE_HASH           &kp DE_DOLLAR      &kp DE_PIPE          &kp DE_TILDE          &kp DE_GRAVE     &trans    &trans  &kp DE_PLUS         &kp DE_PERCENT           &kp DE_DOUBLE_QUOTES      &kp DE_SQT    &kp DE_SEMICOLON  &trans
-                                 &trans             &trans            &trans             &trans        &trans    &trans  &trans           &trans                &trans                 &trans
+&trans     &kp F1                &kp F2             &kp F3                  &kp F4                  &kp F5                                  &kp F6              &kp F7                      &kp F8                      &kp F9          &kp F10             &kp F11
+&kp GRAVE  &none                 &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET     &kp DE_RIGHT_BRACKET    &kp DE_CARET                            &kp DE_EXCLAMATION  &kp DE_LESS_THAN            &kp DE_GREATER_THAN         &kp DE_EQUAL    &kp DE_AMPERSAND    &kp F12
+&trans     &kp DE_BACKSLASH  	 &kp DE_SLASH       &kp DE_LEFT_BRACE       &kp DE_RIGHT_BRACE      &kp DE_ASTERISK                         &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS     &kp DE_RIGHT_PARENTHESIS    &kp DE_MINUS    &kp DE_COLON        &kp DE_AT_SIGN
+&trans     &kp DE_HASH           &kp DE_DOLLAR      &kp DE_PIPE             &kp DE_TILDE            &kp DE_GRAVE        &trans    &trans    &kp DE_PLUS         &kp DE_PERCENT              &kp DE_DOUBLE_QUOTES        &kp DE_SQT      &kp DE_SEMICOLON    &kp DE_EURO
+                                 &trans             &trans                  &trans                  &trans              &trans    &trans    &trans              &trans                      &trans                      &tran
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
