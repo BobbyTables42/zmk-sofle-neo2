@@ -86,8 +86,8 @@
 
             bindings = <
 &bt BT_SEL 0  &trans        &trans        &trans        &trans          &trans                          &trans     &trans           &trans    &trans        &trans      &trans
-&bt BT_SEL 1  &kp INS       &kp DE_N7     &kp DE_N8     &kp DE_N9       &trans                          &kp PG_UP  &kp BACKSPACE    &kp UP    &kp DELETE    &kp PG_DOWN &trans
-&bt BT_SEL 2  &kp LALT      &kp DE_N4     &kp DE_N5     &kp DE_N6       &kp CLCK                        &kp HOME   &kp LEFT         &kp DOWN  &kp RIGHT     &kp END     &kp BSPC
+&bt BT_SEL 1  &kp INS       &kp DE_N7     &kp DE_N8     &kp DE_N9       &trans                          &kp PG_UP  &kp BACKSPACE    &kp UP    &kp DELETE    &kp PG_DN   &trans
+&bt BT_SEL 2  &kp LALT      &kp DE_N4     &kp DE_N5     &kp DE_N6       &kp CLCK                        &kp HOME   &kp LEFT         &kp DOWN  &kp RIGHT     &kp END     &trans
 &bt BT_SEL 3  &kp K_UNDO    &kp DE_N1     &kp DE_N2     &kp DE_N3       &trans        &trans    &trans  &trans     &trans           &trans    &trans        &trans      &trans
                             &trans        &trans        &kp DE_N0       &trans        &trans    &trans  &trans     &trans           &trans    &trans
             >;
