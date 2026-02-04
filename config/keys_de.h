@@ -51,6 +51,9 @@
  * written authorization of the copyright holder.
  */
 
+
+ /* Downloaded from https://github.com/joelspadin/zmk-locale-generator/releases */
+
 #pragma once
 
 #include <dt-bindings/zmk/hid_usage.h>

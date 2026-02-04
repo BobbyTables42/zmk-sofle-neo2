@@ -32,7 +32,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "buchstaben";
+            display-name = "0_buchstaben";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | BKSPC |
@@ -42,18 +42,18 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp DE_N1            &kp DE_N2           &kp DE_N3           &kp DE_N4            &kp DE_N5                              &kp DE_N6                &kp DE_N7     &kp DE_N8        &kp DE_N9      &kp DE_N0  &kp BACKSPACE
-&kp ESC    &kp DE_X             &kp DE_V            &kp DE_L            &kp DE_C             &kp DE_W                               &kp DE_K                 &kp DE_H      &kp DE_G         &kp DE_F       &kp DE_Q   &kp DE_CAPITAL_SZ
-&kp TAB    &kp DE_U             &kp DE_I            &kp DE_A            &kp DE_E             &kp DE_O                               &kp DE_S                 &kp DE_N      &kp DE_R         &kp DE_T       &kp DE_D   &kp DE_Y
-&kp LSHFT  &kp DE_U_UMLAUT      &kp DE_O_UMLAUT     &kp DE_A_UMLAUT     &kp DE_P             &kp DE_Z   &kp C_MUTE    &none         &kp DE_B                 &kp DE_M      &kp DE_COMMA     &kp DE_PERIOD  &kp DE_J   &none
-                                &kp LGUI            &kp LALT            &kp LEFT_CONTROL     &lt 1 RET  &lt 2 DELETE  &kp BACKSPACE &mt LEFT_SHIFT SPACE     &kp RCTRL  &kp LEFT_ALT  &kp RGUI
+&kp GRAVE  &kp DE_N1            &kp DE_N2           &kp DE_N3           &kp DE_N4            &kp DE_N5                                      &kp DE_N6           &kp DE_N7     &kp DE_N8         &kp DE_N9      &kp DE_N0  &kp BACKSPACE
+&kp ESC    &kp DE_X             &kp DE_V            &kp DE_L            &kp DE_C             &kp DE_W                                       &kp DE_K            &kp DE_H      &kp DE_G          &kp DE_F       &kp DE_Q   &kp DE_CAPITAL_SZ
+&kp TAB    &kp DE_U             &kp DE_I            &kp DE_A            &kp DE_E             &kp DE_O                                       &kp DE_S            &kp DE_N      &kp DE_R          &kp DE_T       &kp DE_D   &kp DE_Y
+&kp LSHFT  &kp DE_U_UMLAUT      &kp DE_O_UMLAUT     &kp DE_A_UMLAUT     &kp DE_P             &kp DE_Z           &kp C_MUTE   &none          &kp DE_B            &kp DE_M      &kp DE_COMMA      &kp DE_PERIOD  &kp DE_J   &none
+                                &kp LGUI            &kp LALT            &kp LEFT_CONTROL     &mt LEFT_SHIFT RET &lt 1 DELETE &kp BACKSPACE  &lt 2 SPACE         &kp RCTRL     &kp LEFT_ALT      &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
-            display-name = "sonderzeichen";
+            display-name = "1_sonderzeichen";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@
         };
 
         raise_layer {
-            display-name = "navigation";
+            display-name = "2_navigation";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
