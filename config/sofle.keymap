@@ -19,8 +19,6 @@
 #define ADJUST 3
 
 / {
-    // Activate ADJUST layer by pressing raise and lower
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -64,7 +62,7 @@
         };
     };
 
-#define ZMK_MOUSE_SCRL_VAL_ENCODER 140    // default: 10
+#define ZMK_MOUSE_SCRL_VAL_ENCODER 1400    // default: 10
 #define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
 #define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
 #define SCRL_LEFT_ENCODER MOVE_X(-ZMK_MOUSE_SCRL_VAL_ENCODER)
