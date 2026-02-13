@@ -14,6 +14,7 @@
 #include <behaviors/mouse_keys.dtsi> 
 
 #include "macros.dtsi"
+#include "mouse.dtsi"
 
 #define BASE 0
 #define LOWER 1
@@ -53,8 +54,7 @@
                                      &kp LGUI         &kp LALT         &kp LEFT_CONTROL  &mt LEFT_SHIFT RET  &lt 1 DELETE        &kp BACKSPACE  &lt 2 SPACE  &kp RCTRL  &kp LEFT_ALT  &kp RGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_msc SCRL_UP_ENCODER SCRL_DOWN_ENCODER>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_msc SCRL_UP_ENCODER SCRL_DOWN_ENCODER>;
         };
 
         lower_layer {
