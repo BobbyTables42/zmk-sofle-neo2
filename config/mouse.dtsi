@@ -1,0 +1,35 @@
+
+
+/ {
+
+
+
+#define ZMK_MOUSE_SCRL_VAL_ENCODER 1000    // default: 10
+#define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
+#define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
+#define SCRL_LEFT_ENCODER MOVE_X(-ZMK_MOUSE_SCRL_VAL_ENCODER)
+#define SCRL_RIGHT_ENCODER MOVE_X(ZMK_MOUSE_SCRL_VAL_ENCODER)
+
+#define ZMK_MOUSE_MOVE_VAL_ENCODER 50000   
+#define MOVE_UP_ENCODER MOVE_Y(ZMK_MOUSE_MOVE_VAL_ENCODER)
+#define MOVE_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_MOVE_VAL_ENCODER)
+#define MOVE_LEFT_ENCODER MOVE_X(-ZMK_MOUSE_MOVE_VAL_ENCODER)
+#define MOVE_RIGHT_ENCODER MOVE_X(ZMK_MOUSE_MOVE_VAL_ENCODER)
+
+    behaviors {
+		inc_dec_msc: behavior_sensor_rotate_mouse_wheel {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			#sensor-binding-cells = <2>;
+         	bindings = <&msc>, <&msc>;
+			tap-ms = <20>;
+		};
+
+        inc_dec_mmv: behavior_sensor_rotate_mouse_movement {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			#sensor-binding-cells = <2>;
+         	bindings = <&mmv>, <&mmv>;
+			tap-ms = <20>;
+		};
+    };
+
+};

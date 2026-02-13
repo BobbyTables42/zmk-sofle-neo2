@@ -1,0 +1,7 @@
+Layout for Sofle choc v2 split keyboard with NEO-Layout.
+
+Used Sources:
+- Macros for german keys:
+  https://github.com/joelspadin/zmk-locale-generator/releases 
+- Mouse handling:
+  https://github.com/pmalecka/zmk-config/tree/master
