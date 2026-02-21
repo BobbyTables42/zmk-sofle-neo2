@@ -17,15 +17,13 @@
 #include "mouse.dtsi"
 
 
+&lt {
+    flavor = "hold-preferred";
+    quick-tap-ms = <150>; 
+};
+
+
 / {
-
-    behaviors {
-        &lt {
-            flavor = "hold-preferred";
-            quick-tap-ms = <150>; 
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
